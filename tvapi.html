@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Show Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>TV Show Search</h1>
+      <p>Find your favorite TV shows quickly and easily!</p>
+    </header>
+    <main>
+      <section class="search-section">
+        <form id="searchForm">
+          <input type="text" placeholder="Enter TV Show Title..." name="query" />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <section class="results-section">
+        <h2>Search Results</h2>
+        <div id="results" class="results-container">
+          <!-- Search results will appear here -->
+        </div>
+      </section>
+    </main>
+
+    <script src="tvapi.js"></script>
+  </body>
+</html>
